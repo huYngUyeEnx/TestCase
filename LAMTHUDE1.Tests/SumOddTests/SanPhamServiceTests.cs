@@ -1,15 +1,17 @@
-﻿using System;
+﻿using LAMTHUDE1.SumOdd;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LAMTHUDE1.Tests
+namespace LAMTHUDE1.Tests.SumOddTests
 {
     [TestFixture]
     public class SanPhamServiceTest
     {
         private SanPhamService _service;
+       
         [SetUp]
         public void Setup()
         {
@@ -24,12 +26,16 @@ namespace LAMTHUDE1.Tests
 
         [Test]
         public void Xoa_MaKhongTonTai_Flase() => Assert.IsTrue(!_service.XoaSanPham("SP3"));
+        
         [Test]
         public void Xoa_MaTonTai_True() => Assert.IsTrue(_service.XoaSanPham("SP1"));
+       
         [Test]
         public void Xoa_MaRong_False() => Assert.IsFalse(_service.XoaSanPham(""));
+       
         [Test]
         public void Xoa_MaNull_() => Assert.IsFalse(_service.XoaSanPham(""));
+       
         [Test]
         public void Xoa_XoaThanhCong_KhongConTrongDS()
         {

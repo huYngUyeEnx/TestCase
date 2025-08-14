@@ -1,4 +1,4 @@
-namespace LAMTHUDE1.Tests
+namespace LAMTHUDE1.Tests.SumOddTests
 {
     public class Tests
     {

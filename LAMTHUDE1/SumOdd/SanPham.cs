@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LAMTHUDE1
+namespace LAMTHUDE1.SumOdd
 {
     public class SanPham
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using LAMTHUDE1;
+using LAMTHUDE1.SumOdd;
 
-namespace LAMTHUDE1.Tests
+namespace LAMTHUDE1.Tests.SumOddTests
 {
     public class MathCalTests
     {
