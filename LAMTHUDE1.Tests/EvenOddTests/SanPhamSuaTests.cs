@@ -24,11 +24,16 @@ namespace LAMTHUDE1.Tests.EvenOddTests
             });
         }
 
-        [Test] public void Sua_MaTonTai_True() => Assert.IsTrue(_service.SuaSanPham("SP1", "New", 2025, 1, 1, "DM"));
-        [Test] public void Sua_MaKhongTonTai_False() => Assert.IsFalse(_service.SuaSanPham("SP99", "New", 2025, 1, 1, "DM"));
-        [Test] public void Sua_MaNull_False() => Assert.IsFalse(_service.SuaSanPham(null, "New", 2025, 1, 1, "DM"));
-        [Test] public void Sua_MaRong_False() => Assert.IsFalse(_service.SuaSanPham("", "New", 2025, 1, 1, "DM"));
-        [Test] public void Sua_MaKhacHoaThuong_False() => Assert.IsFalse(_service.SuaSanPham("sp01", "New", 2025, 1, 1, "DM"));
+        [Test] public void Sua_MaTonTai_True() 
+            => Assert.IsTrue(_service.SuaSanPham("SP1", "New", 2025, 1, 1, "DM"));
+        [Test] public void Sua_MaKhongTonTai_False() 
+            => Assert.IsFalse(_service.SuaSanPham("SP99", "New", 2025, 1, 1, "DM"));
+        [Test] public void Sua_MaNull_False() 
+            => Assert.IsFalse(_service.SuaSanPham(null, "New", 2025, 1, 1, "DM"));
+        [Test] public void Sua_MaRong_False() 
+            => Assert.IsFalse(_service.SuaSanPham("", "New", 2025, 1, 1, "DM"));
+        [Test] public void Sua_MaKhacHoaThuong_False() 
+            => Assert.IsFalse(_service.SuaSanPham("sp01", "New", 2025, 1, 1, "DM"));
 
 
 
